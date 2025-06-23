@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Folder and File Metadata",
+  "type": "object",
+  "properties": {
+    "path": { "type": "string" },
+    "summary": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "created_at": { "type": "string", "format": "date-time" },
+    "source_files": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["path", "summary", "tags", "created_at"],
+  "additionalProperties": false
+}
