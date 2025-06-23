@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import List
+from zipfile import is_zipfile
 
 from langchain_community.document_loaders import (
     PyPDFLoader,
@@ -41,11 +42,24 @@ def _load_file(file: Path) -> List[Document]:
     """Load a single file."""
     if not file.exists():
         return []
+    if is_zipfile(file):
+        # Skip archives
+        return []
     suffix = file.suffix.lower()
     if suffix == ".pdf":
-        return PyPDFLoader(str(file)).load()
-    if suffix in {".docx", ".doc"}:
-        return Docx2txtLoader(str(file)).load()
-    if suffix == ".md":
-        return UnstructuredMarkdownLoader(str(file)).load()
-    return TextLoader(str(file), autodetect_encoding=True).load()
+        loader = PyPDFLoader(str(file))
+    elif suffix in {".docx", ".doc"}:
+        loader = Docx2txtLoader(str(file))
+    elif suffix == ".md":
+        loader = UnstructuredMarkdownLoader(str(file))
+    elif suffix in {".txt", ""}:
+        loader = TextLoader(str(file), autodetect_encoding=True)
+    else:
+        # unsupported file type
+        return []
+
+    try:
+        return loader.load()
+    except Exception:
+        # skip files that cannot be read (e.g. unknown encoding)
+        return []
