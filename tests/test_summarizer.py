@@ -7,6 +7,7 @@ class FakeChain:
         return {"output_text": "summary"}
 
 
+
 def test_summarize_documents(monkeypatch, tmp_path):
     file = tmp_path / "test.txt"
     file.write_text("hello world")

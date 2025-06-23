@@ -34,3 +34,4 @@ def summarize_documents(docs: List[Document]) -> str:
     if isinstance(result, dict):
         return result.get("output_text", "")
     return str(result)
+

@@ -23,3 +23,4 @@ def test_load_documents_skips_zip(tmp_path):
     file.write_bytes(b"PK\x03\x04")
     docs = load_documents(str(file))
     assert docs == []
+
