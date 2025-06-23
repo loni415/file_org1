@@ -5,6 +5,7 @@ from typing import List
 
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.chat_models import ChatOllama
+
 from langchain.docstore.document import Document
 
 

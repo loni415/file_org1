@@ -11,6 +11,7 @@ pip install -e .
 
 The environment installs `docx2txt` so DOCX files can be processed.
 
+
 ## Usage
 ```
 python examples/run_example.py --path /path/to/folder
