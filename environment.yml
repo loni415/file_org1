@@ -1,0 +1,15 @@
+name: folder-organizer
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.8
+  - pip
+  - pip:
+      - ollama
+      - langchain
+      - langchain-community
+      - llama-index
+      - jsonschema
+      - prompt-toolkit
+      - docx2txt
+      - pytest
