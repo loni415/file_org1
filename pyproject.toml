@@ -18,6 +18,7 @@ classifiers = [
 dependencies = [
     "ollama",
     "langchain",
+    "langchain-community",
     "llama-index",
     "jsonschema",
     "prompt-toolkit"
@@ -27,7 +28,7 @@ dependencies = [
 test = ["pytest"]
 
 [tool.setuptools.packages.find]
-where = ["folder_organizer"]
+where = ["."]
 
 [project.scripts]
 folder-organizer = "folder_organizer.cli:main"
