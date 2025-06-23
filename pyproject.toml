@@ -21,7 +21,8 @@ dependencies = [
     "langchain-community",
     "llama-index",
     "jsonschema",
-    "prompt-toolkit"
+    "prompt-toolkit",
+    "docx2txt"
 ]
 
 [project.optional-dependencies]

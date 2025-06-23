@@ -11,4 +11,5 @@ dependencies:
       - llama-index
       - jsonschema
       - prompt-toolkit
-      - pytest
+      - docx2txt
+

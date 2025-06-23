@@ -4,9 +4,11 @@ from __future__ import annotations
 from pathlib import Path
 from typing import List
 
-from langchain.document_loaders import (
+from langchain_community.document_loaders import (
     PyPDFLoader,
     TextLoader,
+    Docx2txtLoader,
+    UnstructuredMarkdownLoader,
 )
 from langchain.docstore.document import Document
 
@@ -39,7 +41,11 @@ def _load_file(file: Path) -> List[Document]:
     """Load a single file."""
     if not file.exists():
         return []
-    if file.suffix.lower() == ".pdf":
+    suffix = file.suffix.lower()
+    if suffix == ".pdf":
         return PyPDFLoader(str(file)).load()
-    else:
-        return TextLoader(str(file)).load()
+    if suffix in {".docx", ".doc"}:
+        return Docx2txtLoader(str(file)).load()
+    if suffix == ".md":
+        return UnstructuredMarkdownLoader(str(file)).load()
+    return TextLoader(str(file), autodetect_encoding=True).load()
