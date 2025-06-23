@@ -3,8 +3,9 @@ from folder_organizer.loader import load_documents
 
 
 class FakeChain:
-    def run(self, docs):
-        return "summary"
+    def invoke(self, params):
+        return {"output_text": "summary"}
+
 
 
 def test_summarize_documents(monkeypatch, tmp_path):

@@ -8,9 +8,10 @@ dependencies:
       - ollama
       - langchain
       - langchain-community
+      - langchain-ollama
       - llama-index
       - jsonschema
       - prompt-toolkit
       - docx2txt
       - pytest
-      - chardet
+

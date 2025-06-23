@@ -19,6 +19,7 @@ dependencies = [
     "ollama",
     "langchain",
     "langchain-community",
+    "langchain-ollama",
     "llama-index",
     "jsonschema",
     "prompt-toolkit",

@@ -8,6 +8,7 @@ def test_load_documents(tmp_path):
     assert docs
     assert docs[0].page_content == "hello"
 
+
 def test_load_documents_skips_unknown(tmp_path):
     """Files with unsupported extensions should be ignored."""
     file = tmp_path / "data.bin"
