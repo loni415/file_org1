@@ -12,4 +12,5 @@ dependencies:
       - jsonschema
       - prompt-toolkit
       - docx2txt
+      - chardet
 
