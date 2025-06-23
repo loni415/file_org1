@@ -22,7 +22,7 @@ def generate_metadata(path: str, summary: str, source_files: List[str]) -> Dict[
         "path": path,
         "summary": summary,
         "tags": [],
-        "created_at": datetime.utcnow().isoformat() + "Z",
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "source_files": source_files,
     }
     VALIDATOR.validate(metadata)
