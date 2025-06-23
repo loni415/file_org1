@@ -13,3 +13,4 @@ dependencies:
       - prompt-toolkit
       - docx2txt
       - pytest
+      - chardet
