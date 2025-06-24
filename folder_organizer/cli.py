@@ -17,11 +17,13 @@ logger = logging.getLogger(__name__)
 def main() -> None:
     """Entry point for the CLI."""
     level_name = os.getenv("LOGLEVEL", "DEBUG").upper()
+
     level = getattr(logging, level_name, logging.INFO)
     logging.basicConfig(
         level=level,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
         filename="folder_organizer.log.txt",
+
     )
     parser = argparse.ArgumentParser(description="Summarize a folder")
     parser.add_argument("--path", required=True, help="Path to folder or file")
@@ -46,6 +48,7 @@ def main() -> None:
                 args.path, summary, list_files(args.path)
             )
             logger.debug("Generated metadata: %s", metadata)
+
             print("Metadata:\n", metadata)
             break
         if action.startswith("r"):

@@ -29,6 +29,7 @@ After showing the generated summary the CLI now provides interactive options:
 Logs are written to `folder_organizer.log.txt` with a default level of `DEBUG`.
 Set the `LOGLEVEL` environment variable to adjust verbosity.
 
+
 ## Testing
 ```
 pytest
