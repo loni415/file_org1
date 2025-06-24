@@ -29,8 +29,12 @@ def summarize_documents(docs: List[Document]) -> str:
         The summarized text.
     """
     logger.info("Summarizing %d document(s)", len(docs))
-    llm = ChatOllama(model="minicpm-v:8b-2.6-q4_K_M")
+    model_name = "minicpm-v:8b-2.6-q4_K_M"
+    llm = ChatOllama(model=model_name)
+    logger.debug("Created ChatOllama with model %s", model_name)
+
     chain = load_summarize_chain(llm, chain_type="map_reduce")
+    logger.debug("Loaded summarize chain")
     try:
         result = chain.invoke({"input_documents": docs})
         logger.debug("Summary result: %s", result)

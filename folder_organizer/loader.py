@@ -67,7 +67,10 @@ def _load_file(file: Path) -> List[Document]:
 
     try:
         logger.debug("Loading file %s", file)
-        return loader.load()
+        docs = loader.load()
+        logger.debug("Loaded %d doc(s) from %s", len(docs), file)
+        return docs
+
     except Exception as exc:
         logger.warning("Failed to load %s: %s", file, exc)
         # skip files that cannot be read (e.g. unknown encoding)

@@ -5,6 +5,9 @@ from pathlib import Path
 from typing import List
 import logging
 
+logger = logging.getLogger(__name__)
+
+
 
 def list_files(path: str) -> List[str]:
     """Return list of file paths under a directory."""
