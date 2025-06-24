@@ -26,8 +26,9 @@ After showing the generated summary the CLI now provides interactive options:
 * **e**dit - edit the summary text manually
 * **c**ancel - exit without generating metadata
 
-Logging is enabled at the INFO level to help troubleshoot issues. Set the
-`LOGLEVEL` environment variable to `DEBUG` for more verbose output.
+Logs are written to `folder_organizer.log.txt` with a default level of `DEBUG`.
+Set the `LOGLEVEL` environment variable to adjust verbosity.
+
 
 ## Testing
 ```
