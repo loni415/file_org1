@@ -39,6 +39,9 @@ def main() -> None:
             continue
         if action.startswith("c"):
             break
+        else:
+            print("Invalid option, please try again.")
+            continue
 
 
 if __name__ == "__main__":
