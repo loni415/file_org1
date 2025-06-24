@@ -19,6 +19,16 @@ ollama pull llama2
 python examples/run_example.py --path /path/to/folder
 ```
 
+After showing the generated summary the CLI now provides interactive options:
+
+* **a**ccept - use the summary and generate metadata
+* **r**egenerate - run summarization again
+* **e**dit - edit the summary text manually
+* **c**ancel - exit without generating metadata
+
+Logs are written to `folder_organizer.log.txt` with a default level of `DEBUG`.
+Set the `LOGLEVEL` environment variable to adjust verbosity.
+
 ## Testing
 ```
 pytest
