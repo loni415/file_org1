@@ -2,9 +2,10 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
+import logging
 
 from jsonschema import Draft7Validator
 
@@ -15,9 +16,12 @@ with SCHEMA_PATH.open("r", encoding="utf-8") as f:
 
 VALIDATOR = Draft7Validator(METADATA_SCHEMA)
 
+logger = logging.getLogger(__name__)
+
 
 def generate_metadata(path: str, summary: str, source_files: List[str]) -> Dict[str, Any]:
     """Generate and validate metadata for a folder or file."""
+    logger.info("Generating metadata for %s", path)
     metadata = {
         "path": path,
         "summary": summary,
@@ -26,4 +30,6 @@ def generate_metadata(path: str, summary: str, source_files: List[str]) -> Dict[
         "source_files": source_files,
     }
     VALIDATOR.validate(metadata)
+    logger.debug("Metadata validated successfully")
+    logger.debug("Metadata content: %s", metadata)
     return metadata
