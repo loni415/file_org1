@@ -7,6 +7,7 @@ import logging
 import os
 from pathlib import Path
 
+
 from .loader import load_documents
 from .summarizer import summarize_documents
 from .metadata import generate_metadata
@@ -21,11 +22,12 @@ LOG_FILE = Path(__file__).resolve().parent.parent / "folder_organizer.log.txt"
 def main() -> None:
     """Entry point for the CLI."""
     level_name = os.getenv("LOGLEVEL", "DEBUG").upper()
-    level = getattr(logging, level_name, logging.INFO)
+etattr(logging, level_name, logging.INFO)
     logging.basicConfig(
         level=level,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
         filename=str(LOG_FILE),
+
     )
     parser = argparse.ArgumentParser(description="Summarize a folder")
     parser.add_argument("--path", required=True, help="Path to folder or file")
@@ -50,6 +52,7 @@ def main() -> None:
                 args.path, summary, list_files(args.path)
             )
             logger.debug("Generated metadata: %s", metadata)
+
             print("Metadata:\n", metadata)
             break
         if action.startswith("r"):

@@ -32,6 +32,7 @@ def summarize_documents(docs: List[Document]) -> str:
     model_name = "minicpm-v:8b-2.6-q4_K_M"
     llm = ChatOllama(model=model_name)
     logger.debug("Created ChatOllama with model %s", model_name)
+
     chain = load_summarize_chain(llm, chain_type="map_reduce")
     logger.debug("Loaded summarize chain")
     try:
