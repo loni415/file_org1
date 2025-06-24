@@ -32,4 +32,5 @@ def generate_metadata(path: str, summary: str, source_files: List[str]) -> Dict[
     VALIDATOR.validate(metadata)
     logger.debug("Metadata validated successfully")
     logger.debug("Metadata content: %s", metadata)
+
     return metadata

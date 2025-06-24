@@ -8,8 +8,10 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+
 def list_files(path: str) -> List[str]:
     """Return list of file paths under a directory."""
+    logger = logging.getLogger(__name__)
     p = Path(path)
     if p.is_dir():
         files = [str(f) for f in p.rglob("*") if f.is_file()]

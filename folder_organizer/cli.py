@@ -38,13 +38,13 @@ def main() -> None:
             "Options: [a]ccept/[r]egenerate/[e]dit/[c]ancel: "
         ).strip().lower()
         logger.debug("User selected action: %s", action)
-
         if action.startswith("a"):
             logger.info("User accepted summary; generating metadata")
             metadata = generate_metadata(
                 args.path, summary, list_files(args.path)
             )
             logger.debug("Generated metadata: %s", metadata)
+
             print("Metadata:\n", metadata)
             break
         if action.startswith("r"):
