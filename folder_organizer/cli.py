@@ -5,6 +5,8 @@ import argparse
 from prompt_toolkit import prompt
 import logging
 import os
+from pathlib import Path
+
 
 from .loader import load_documents
 from .summarizer import summarize_documents
@@ -13,16 +15,18 @@ from .utils import list_files
 
 logger = logging.getLogger(__name__)
 
+# Ensure logs are written to the project root
+LOG_FILE = Path(__file__).resolve().parent.parent / "folder_organizer.log.txt"
+
 
 def main() -> None:
     """Entry point for the CLI."""
     level_name = os.getenv("LOGLEVEL", "DEBUG").upper()
-
-    level = getattr(logging, level_name, logging.INFO)
+etattr(logging, level_name, logging.INFO)
     logging.basicConfig(
         level=level,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-        filename="folder_organizer.log.txt",
+        filename=str(LOG_FILE),
 
     )
     parser = argparse.ArgumentParser(description="Summarize a folder")

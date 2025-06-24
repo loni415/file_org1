@@ -27,6 +27,7 @@ After showing the generated summary the CLI now provides interactive options:
 * **c**ancel - exit without generating metadata
 
 Logs are written to `folder_organizer.log.txt` with a default level of `DEBUG`.
+The file is created in the project root so logs are easy to find.
 Set the `LOGLEVEL` environment variable to adjust verbosity.
 
 
