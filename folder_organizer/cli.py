@@ -18,12 +18,27 @@ def main() -> None:
 
     docs = load_documents(args.path)
     summary = summarize_documents(docs)
-    print("Summary:\n", summary)
 
-    confirm = prompt("Accept summary? (y/n) ")
-    if confirm.lower().startswith("y"):
-        metadata = generate_metadata(args.path, summary, list_files(args.path))
-        print("Metadata:\n", metadata)
+    while True:
+        print("Summary:\n", summary)
+        action = prompt(
+            "Options: [a]ccept/[r]egenerate/[e]dit/[c]ancel: "
+        ).strip().lower()
+
+        if action.startswith("a"):
+            metadata = generate_metadata(
+                args.path, summary, list_files(args.path)
+            )
+            print("Metadata:\n", metadata)
+            break
+        if action.startswith("r"):
+            summary = summarize_documents(docs)
+            continue
+        if action.startswith("e"):
+            summary = prompt("Edit summary:", default=summary)
+            continue
+        if action.startswith("c"):
+            break
 
 
 if __name__ == "__main__":
