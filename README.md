@@ -29,6 +29,7 @@ After showing the generated summary the CLI now provides interactive options:
 Logging is enabled at the INFO level to help troubleshoot issues. Set the
 `LOGLEVEL` environment variable to `DEBUG` for more verbose output.
 
+
 ## Testing
 ```
 pytest
