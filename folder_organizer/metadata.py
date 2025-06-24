@@ -2,10 +2,12 @@
 from __future__ import annotations
 
 import json
+import jsonschema
+
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
-
+from jsonschema import validate
 from jsonschema import Draft7Validator
 
 SCHEMA_PATH = Path(__file__).resolve().parent.parent / "schemas" / "metadata.schema.json"
