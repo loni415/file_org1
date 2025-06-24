@@ -723,3 +723,229 @@ The nomenklatura system within China's civil service is still present despite ne
 2025-06-23 23:25:17,621 [DEBUG] httpcore.http11: receive_response_body.complete
 2025-06-23 23:25:17,621 [DEBUG] httpcore.http11: response_closed.started
 2025-06-23 23:25:17,621 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:26:45,562 [INFO] folder_organizer.cli: Loading documents from /Users/lukasfiller/Downloads/dddd
+2025-06-23 23:26:45,564 [INFO] folder_organizer.loader: Loading documents from path /Users/lukasfiller/Downloads/dddd
+2025-06-23 23:26:45,565 [INFO] folder_organizer.loader: Skipping archive /Users/lukasfiller/Downloads/dddd/Document 9 - 2013_en-cl.docx
+2025-06-23 23:26:45,566 [DEBUG] folder_organizer.loader: Loading file /Users/lukasfiller/Downloads/dddd/dis_ch1_3.txt
+2025-06-23 23:26:45,566 [DEBUG] folder_organizer.loader: Loaded 1 doc(s) from /Users/lukasfiller/Downloads/dddd/dis_ch1_3.txt
+2025-06-23 23:26:45,567 [DEBUG] folder_organizer.loader: Loading file /Users/lukasfiller/Downloads/dddd/Brodsgaard - Cadre Pers Management CPC 2012.pdf
+2025-06-23 23:26:45,677 [WARNING] pypdf._cmap: Skipping broken line b'01af   01af   1d504': Odd-length string
+2025-06-23 23:26:45,678 [WARNING] pypdf._cmap: Skipping broken line b'01dd   01dd   1d505': Odd-length string
+2025-06-23 23:26:45,678 [WARNING] pypdf._cmap: Skipping broken line b'0339   0339   1d50a': Odd-length string
+2025-06-23 23:26:45,679 [WARNING] pypdf._cmap: Skipping broken line b'0453   0453   1d50e': Odd-length string
+2025-06-23 23:26:45,679 [WARNING] pypdf._cmap: Skipping broken line b'04a8   04a8   1d50f': Odd-length string
+2025-06-23 23:26:45,679 [WARNING] pypdf._cmap: Skipping broken line b'04cb   04cb   1d510': Odd-length string
+2025-06-23 23:26:45,679 [WARNING] pypdf._cmap: Skipping broken line b'04cc   04cc   1d40c': Odd-length string
+2025-06-23 23:26:45,680 [WARNING] pypdf._cmap: Skipping broken line b'05c8   05c8   1d513': Odd-length string
+2025-06-23 23:26:45,680 [WARNING] pypdf._cmap: Skipping broken line b'05d7   05d7   1d514': Odd-length string
+2025-06-23 23:26:45,680 [WARNING] pypdf._cmap: Skipping broken line b'064a   064a   1d516': Odd-length string
+2025-06-23 23:26:45,680 [WARNING] pypdf._cmap: Skipping broken line b'0688   0688   1d517': Odd-length string
+2025-06-23 23:26:45,681 [WARNING] pypdf._cmap: Skipping broken line b'070c   070c   1d519': Odd-length string
+2025-06-23 23:26:45,690 [WARNING] pypdf._cmap: Skipping broken line b'01af   01af   1d504': Odd-length string
+2025-06-23 23:26:45,690 [WARNING] pypdf._cmap: Skipping broken line b'01dd   01dd   1d505': Odd-length string
+2025-06-23 23:26:45,691 [WARNING] pypdf._cmap: Skipping broken line b'0339   0339   1d50a': Odd-length string
+2025-06-23 23:26:45,692 [WARNING] pypdf._cmap: Skipping broken line b'0453   0453   1d50e': Odd-length string
+2025-06-23 23:26:45,692 [WARNING] pypdf._cmap: Skipping broken line b'04a8   04a8   1d50f': Odd-length string
+2025-06-23 23:26:45,692 [WARNING] pypdf._cmap: Skipping broken line b'04cb   04cb   1d510': Odd-length string
+2025-06-23 23:26:45,692 [WARNING] pypdf._cmap: Skipping broken line b'04cc   04cc   1d40c': Odd-length string
+2025-06-23 23:26:45,693 [WARNING] pypdf._cmap: Skipping broken line b'05c8   05c8   1d513': Odd-length string
+2025-06-23 23:26:45,693 [WARNING] pypdf._cmap: Skipping broken line b'05d7   05d7   1d514': Odd-length string
+2025-06-23 23:26:45,693 [WARNING] pypdf._cmap: Skipping broken line b'064a   064a   1d516': Odd-length string
+2025-06-23 23:26:45,693 [WARNING] pypdf._cmap: Skipping broken line b'0688   0688   1d517': Odd-length string
+2025-06-23 23:26:45,693 [WARNING] pypdf._cmap: Skipping broken line b'070c   070c   1d519': Odd-length string
+2025-06-23 23:26:45,835 [DEBUG] folder_organizer.loader: Loaded 16 doc(s) from /Users/lukasfiller/Downloads/dddd/Brodsgaard - Cadre Pers Management CPC 2012.pdf
+2025-06-23 23:26:45,835 [DEBUG] folder_organizer.loader: Loaded 17 document(s)
+2025-06-23 23:26:45,835 [INFO] folder_organizer.cli: Summarizing 17 documents
+2025-06-23 23:26:45,835 [INFO] folder_organizer.summarizer: Summarizing 17 document(s)
+2025-06-23 23:26:45,844 [DEBUG] folder_organizer.summarizer: Created ChatOllama with model minicpm-v:8b-2.6-q4_K_M
+2025-06-23 23:26:45,844 [DEBUG] folder_organizer.summarizer: Loaded summarize chain
+2025-06-23 23:26:45,849 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-06-23 23:26:45,849 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x110fe2ba0>
+2025-06-23 23:26:45,849 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:26:45,849 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:26:45,849 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:26:45,849 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:26:45,849 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:26:53,020 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:26:53 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:26:53,020 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:26:53,021 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:26:55,049 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:26:55,049 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:26:55,050 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:26:55,051 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:26:55,051 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:26:55,051 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:26:55,052 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:26:55,052 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:26:55,350 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:26:55 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:26:55,351 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:26:55,351 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:26:56,633 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:26:56,634 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:26:56,634 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:26:56,634 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:26:56,635 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:26:56,635 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:26:56,635 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:26:56,635 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:26:57,738 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:26:57 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:26:57,738 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:26:57,738 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:26:59,286 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:26:59,286 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:26:59,286 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:26:59,287 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:26:59,287 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:26:59,288 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:26:59,288 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:26:59,288 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:00,935 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:00 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:00,935 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:00,936 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:01,903 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:01,905 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:01,905 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:01,906 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:01,910 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:01,910 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:01,914 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:01,922 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:03,358 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:03 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:03,358 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:03,358 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:04,587 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:04,588 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:04,588 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:04,589 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:04,589 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:04,589 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:04,589 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:04,589 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:05,685 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:05 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:05,685 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:05,685 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:07,521 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:07,521 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:07,521 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:07,522 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:07,522 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:07,522 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:07,522 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:07,522 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:09,068 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:09 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:09,069 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:09,069 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:12,423 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:12,423 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:12,423 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:12,424 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:12,424 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:12,424 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:12,424 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:12,424 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:13,696 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:13 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:13,697 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:13,697 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:15,497 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:15,498 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:15,498 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:15,498 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:15,499 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:15,499 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:15,499 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:15,499 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:16,126 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:16 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:16,126 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:16,126 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:17,342 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:17,342 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:17,342 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:17,343 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:17,343 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:17,343 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:17,343 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:17,344 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:18,480 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:18 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:18,481 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:18,481 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:21,208 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:21,208 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:21,208 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:21,209 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:21,209 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:21,209 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:21,210 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:21,210 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:22,483 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:22 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:22,483 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:22,483 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:25,623 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:25,624 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:25,624 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:25,624 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:25,625 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:25,625 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:25,625 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:25,625 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:26,804 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:26 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:26,804 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:26,804 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:29,306 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:29,306 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:29,306 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:29,307 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:29,307 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:29,307 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:29,308 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:29,308 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:30,488 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:30 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:30,488 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:30,488 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:32,414 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:32,414 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:32,414 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:32,415 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:32,415 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:32,415 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:32,415 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:32,415 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:33,574 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:33 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:33,574 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:33,574 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:36,522 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:36,522 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:36,522 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:36,523 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:36,523 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:36,523 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:36,524 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:36,524 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:37,778 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:37 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:37,778 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:37,778 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:39,115 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:39,115 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:39,115 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:39,116 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:39,116 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:39,116 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:39,116 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:39,116 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:40,236 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:40 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:40,237 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:40,237 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:41,331 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:41,331 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:41,331 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:41,332 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:41,332 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-06-23 23:27:41,332 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-06-23 23:27:41,332 [DEBUG] httpcore.http11: send_request_body.complete
+2025-06-23 23:27:41,332 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-06-23 23:27:42,168 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 24 Jun 2025 03:27:42 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-06-23 23:27:42,169 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-06-23 23:27:42,169 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-06-23 23:27:44,093 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-06-23 23:27:44,093 [DEBUG] httpcore.http11: response_closed.started
+2025-06-23 23:27:44,093 [DEBUG] httpcore.http11: response_closed.complete
+2025-06-23 23:27:44,094 [ERROR] folder_organizer.cli: Application error: Could not import transformers python package. This is needed in order to calculate get_token_ids. Please install it with `pip install transformers`.
