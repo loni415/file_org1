@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from typing import List
+import logging
 from langchain_ollama.llms import OllamaLLM
 from langchain_community.llms import Ollama
 from langchain_ollama.chat_models import ChatOllama
@@ -11,6 +12,8 @@ from langchain_community.llms.ollama import OllamaEndpointNotFoundError
 from langchain.docstore.document import Document
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain_ollama import OllamaLLM
+
+logger = logging.getLogger(__name__)
 
 def summarize_documents(docs: List[Document]) -> str:
     """Summarize documents using a map-reduce chain.
@@ -25,16 +28,22 @@ def summarize_documents(docs: List[Document]) -> str:
     str
         The summarized text.
     """
+    logger.info("Summarizing %d document(s)", len(docs))
     llm = ChatOllama(model="minicpm-v:8b-2.6-q4_K_M")
     chain = load_summarize_chain(llm, chain_type="map_reduce")
     try:
         result = chain.invoke({"input_documents": docs})
+        logger.debug("Summary result: %s", result)
     except OllamaEndpointNotFoundError as exc:
+        logger.error("Ollama model not found", exc_info=True)
         raise RuntimeError(
             "Ollama model not found. Run 'ollama pull' first."
         ) from exc
 
     if isinstance(result, dict):
-        return result.get("output_text", "")
-    return str(result)
+        summary_text = result.get("output_text", "")
+    else:
+        summary_text = str(result)
+    logger.info("Generated summary of length %d", len(summary_text))
+    return summary_text
 

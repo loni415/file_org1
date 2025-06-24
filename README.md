@@ -26,6 +26,10 @@ After showing the generated summary the CLI now provides interactive options:
 * **e**dit - edit the summary text manually
 * **c**ancel - exit without generating metadata
 
+Logging is enabled at the INFO level to help troubleshoot issues. Set the
+`LOGLEVEL` environment variable to `DEBUG` for more verbose output.
+
+
 ## Testing
 ```
 pytest
