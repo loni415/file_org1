@@ -22,12 +22,11 @@ LOG_FILE = Path(__file__).resolve().parent.parent / "folder_organizer.log.txt"
 def main() -> None:
     """Entry point for the CLI."""
     level_name = os.getenv("LOGLEVEL", "DEBUG").upper()
-etattr(logging, level_name, logging.INFO)
+    level = getattr(logging, level_name, logging.INFO)
     logging.basicConfig(
         level=level,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
         filename=str(LOG_FILE),
-
     )
     parser = argparse.ArgumentParser(description="Summarize a folder")
     parser.add_argument("--path", required=True, help="Path to folder or file")

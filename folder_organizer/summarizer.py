@@ -51,3 +51,22 @@ def summarize_documents(docs: List[Document]) -> str:
     logger.info("Generated summary of length %d", len(summary_text))
     return summary_text
 
+def chunk_text(text: str, max_tokens: int = 800) -> List[str]:
+    """Split text into chunks that fit within token limits."""
+    # Simple word-based chunking - you may want to use a proper tokenizer
+    words = text.split()
+    chunks = []
+    current_chunk = []
+    
+    for word in words:
+        current_chunk.append(word)
+        # Rough estimate: 1 token ≈ 0.75 words
+        if len(current_chunk) * 0.75 > max_tokens:
+            chunks.append(' '.join(current_chunk[:-1]))
+            current_chunk = [word]
+    
+    if current_chunk:
+        chunks.append(' '.join(current_chunk))
+    
+    return chunks
+
